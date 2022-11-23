@@ -1,0 +1,332 @@
+
+/* komp */
+@media screen and (max-width:1199px){
+nav .nav-row {
+width: 100%;
+padding-left:12px;
+padding-right: 12px;
+}
+.pre-nav-ul li:first-child{
+    margin-left:70px;
+}
+.header-text{
+    margin-left: 70px;
+}
+.last-li a{
+    margin-right: -18px;
+    letter-spacing: 0;
+}
+.rad{
+    display: none;
+}
+.reservation .row .col:first-child{
+    flex-basis:59%;
+}
+.reservation .row .col:last-child{
+    flex-basis:39%;
+}
+.recension .fa-angle-left,
+.recension .fa-angle-right{
+    display: none;
+}
+
+}
+
+/* veci tableti */
+@media screen and (max-width:1023px){
+    .header-text h1{
+        font-size: 36px;
+    width: 100%;
+
+    }
+    nav .nav-row .nav-logo{
+        width: 90%;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav .nav-row .nav-logo i {
+        display: block;
+    }
+    nav .nav-row .main-nav-ul{
+        display: none;
+    }
+    
+.header-text{
+    text-align: center;
+    margin-left: 0;
+}
+.pre-nav-ul{
+    justify-content: center;
+}
+.pre-nav-ul li:first-child{
+    margin-left:0px;
+}
+
+
+.about-us{
+    padding: 60px 5%;
+}
+
+.about-us .row{
+    flex-direction: column;
+}
+.about-us .row .col{
+    flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.about-us .row .col:first-child{
+    order:2;
+}
+.about-us .row .col:last-child{
+    order:1;
+}
+
+.about-us .row .col h3{
+    font-size: 20px;
+}
+.about-us .row .col p{
+    margin-bottom: 10px;
+}
+.about-us .row .col .about-second-p{
+    margin-bottom: 27px;
+}
+.menu-ul{
+    margin-bottom: 20px;
+}
+.menu .row{
+    flex-direction: column;
+    margin-top: 0;
+}
+.menu .row .col{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.dostava-title h1{
+    font-size: 36px;
+}
+.dostava-title p{
+    font-size: 18px;
+}
+.dostava-main h2{
+    font-size: 18px;
+}
+.dostava-main h1{
+    font-size: 28px;
+}
+.dostava-main p{
+    font-size: 16px;
+}
+.dostava-main .row{
+    padding-bottom: 30px;
+}
+.dostava-main .row .col i{
+    font-size:16px;
+    margin-right: 15px;
+}
+.dostava-main .row .col .number{
+    font-size: 16px;
+}
+.reservation .row{
+    flex-direction: column;
+    text-align: center;
+}
+.reservation .row .col:first-child{
+    margin-bottom: 30px;
+}
+.reservation .row .col{
+    flex-basis: 100%;
+}
+.recension .row{
+    display: flex;
+    flex-direction: column;
+}
+.recension .row .col{
+    margin-bottom: 20px;
+    
+}
+.contact-btn{
+    margin: 15px auto 0 ;
+}
+.reservation-form form{
+    justify-content: center;
+}
+.map{
+    margin: 15px auto;
+    justify-content: center;
+    height: 300px;
+}
+.contact .row{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .row .col{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+}
+
+
+
+/* tablet */
+@media screen and (max-width:768px){
+nav .nav-row{
+    flex-direction: column;
+}
+.header-text h1{
+    font-size: 32px;
+}
+
+.header-text h2{
+    font-size: 18px;
+}
+
+.pre-nav-ul{
+    justify-content: center;
+}
+.header-text{
+    text-align: center;
+}
+.pre-nav-ul li span{
+font-size: 14px;
+}
+.pre-nav-ul li i{
+    font-size: 14px;
+    margin-right: 0;
+}
+.menu-ul{
+    margin-bottom: 20px;
+}
+.menu .row{
+    flex-direction: column;
+    margin-top: 0;
+}
+.menu .row .col{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.dostava-main .row{
+    flex-direction: column;
+    text-align: center;
+}
+.dostava-title h1{
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.dostava-title p{
+    font-size: 18px;
+}
+.dostava-main h2{
+    font-size: 18px;
+}
+.dostava-main h1{
+    font-size: 28px;
+}
+.recension .row{
+    flex-direction: column;
+}
+.recension .row .col{
+    margin-bottom: 20px;
+}
+.dostava-col-title{
+    display: none;
+}
+.dostava-main h2{
+    margin-top: -8px;
+}
+.reservation-form form{
+    display: block;
+}
+.reservation-form form input,
+.reservation-form form select{
+width: 70%;
+text-align: center;
+margin: 0 auto;
+}
+.map{
+    margin: 15px auto;
+    justify-content: center;
+    height: 300px;
+}
+.contact .row{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .row .col{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .row{
+    flex-direction: column;
+    text-align: center;
+}
+footer .row .col:nth-child(1),
+footer .row .col:nth-child(2){
+    margin-bottom: 30px;
+}
+}
+
+
+/* telefoni */
+@media screen and (max-width:480px){
+    
+.pre-nav-ul li span{
+font-size: 11px;
+}
+.header-text h1{
+    font-size: 28px;
+}
+
+.pre-nav-ul li i{
+    font-size: 10px;
+    margin-right: 0;
+}
+.nav-logo h2 span{
+    font-size: 22px;
+}
+.header-buttons a{
+    border:2px solid #cda45e;
+    padding: 8px 25px;
+    color:#fff;
+    transition: .3s;
+    border-radius:50px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+}
+.about-us .row .col{
+    text-align: center;
+}
+.menu .menu-ul li{
+    padding: 1%;
+}
+.reservation-form form input,
+.reservation-form form select{
+width: 80%;
+text-align: center;
+margin: 0 auto;
+}
+.footer-social li {
+    display: inline;
+    padding: 15px;
+}
+.after-footer .container{
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+}
+.after-footer .container h5:first-child{
+    margin-bottom: 20px;
+}
+}

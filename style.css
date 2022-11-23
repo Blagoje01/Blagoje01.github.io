@@ -1,0 +1,729 @@
+/************MAIN SETTINGS***********/
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.section-title h3 {
+  font-size: 28px;
+  text-align: center;
+  position: relative;
+}
+.section-title {
+  margin-bottom: 60px;
+}
+.section-title h3::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #cda45e;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-title h3::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 1px;
+  background-color: #ccc;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/************HEADER and NAVIGATION***********/
+header {
+  width: 100%;
+  height: 800px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+/* pre nav */
+.pre-nav {
+  color: #fff;
+}
+.nav-logo i {
+  display: none;
+}
+.pre-nav-ul {
+  display: flex;
+}
+.pre-nav-ul li {
+  text-shadow: 0 0 1 #000;
+  margin: 15px 0;
+}
+.pre-nav-ul li:first-child {
+  margin-right: 40px;
+}
+.pre-nav-ul li i {
+  margin-right: 7px;
+  color: #cda45e;
+}
+/* main nav */
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+nav .nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.main-nav-ul {
+  display: flex;
+}
+.main-nav-ul li {
+  margin-right: 20px;
+}
+.first-li {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+.main-nav-ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+.main-nav-ul .border-li:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ccc;
+  transition: 0.4s;
+}
+.last-li a {
+  margin-right: -30px;
+  border: 2px solid #cda45e;
+  padding: 8px 25px;
+  transition: 0.4s;
+  border-radius: 50px;
+  letter-spacing: 2px;
+}
+.last-li a:hover {
+  border: 2px solid #cda45e;
+  color: #fff;
+  background-color: #cda45e;
+}
+.border-li {
+  transition: 0.4s;
+}
+
+.nav-logo h2 {
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 28px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.nav-logo h2 span {
+  color: #cda45e;
+  transition: 0.3s;
+}
+.nav-logo h2 span:hover {
+  color: #fff;
+}
+
+.header-main {
+  margin-top: 150px;
+}
+.header-text h1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+  width: 400px;
+}
+.header-text h1 span {
+  color: #cda45e;
+}
+.header-text h2 {
+  font-size: 24px;
+  font-family: "Playfair Display", sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.header-text h1,
+.header-text h2 {
+  text-shadow: 0 0 12 #000;
+  letter-spacing: 1px;
+}
+.header-buttons a {
+  border: 2px solid #cda45e;
+  padding: 8px 25px;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+}
+.first-header-btn {
+  margin-right: 30px;
+}
+.header-buttons a:hover {
+  color: #fff;
+  border: 2px solid #cda45e;
+  background-color: #cda45e;
+}
+/*****************ABOUT US*********************/
+.about-us {
+  padding: 60px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(images/contact.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.about-us .row .col img {
+  max-width: 100%;
+}
+.about-us .row .col h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.about-us .row .col p {
+  margin-bottom: 27px;
+}
+.about-us .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-us .row .col {
+  flex-basis: 49%;
+}
+.about-img {
+  position: relative;
+  transition: 0.5s;
+}
+.about-img img {
+  max-width: 100%;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  transition: 0.7s;
+  vertical-align: middle;
+}
+.about-img::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 20px;
+  left: 20px;
+  border-top: 4px solid #cda45e;
+  border-left: 4px solid #cda45e;
+  z-index: 1;
+  transition: 0.5s;
+}
+.about-img::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  border-bottom: 4px solid #cda45e;
+  border-right: 4px solid #cda45e;
+  z-index: 1;
+  transition: 0.5s;
+}
+.about-img:hover::after {
+  top: 10px;
+  left: 10px;
+}
+.about-img:hover::before {
+  bottom: 10px;
+  right: 10px;
+}
+.about-img:hover {
+  transform: scale(1.03);
+}
+.about-btn {
+  border: 2px solid #cda45e;
+  color: #fff;
+  text-decoration: none;
+  background-color: #cda45e;
+  padding: 8px 25px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+}
+/*******************MENU*************************/
+.menu {
+  padding: 60px 0;
+  background-color: #1a1814;
+}
+
+.menu-ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.menu-ul li {
+  padding: 15px;
+}
+.menu-ul li a {
+  color: #fff;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid #cda45e;
+  border-radius: 50px;
+}
+.menu-ul li .first-menu-link {
+  background-color: #cda45e;
+}
+.menu .row {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .row .col {
+  flex-basis: 49%;
+}
+.menu .row .col img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  float: left;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu .row .col span {
+  float: right;
+  font-weight: 400;
+  font-size: 20px;
+  color: #cda45e;
+  z-index: 22;
+}
+
+.food-info h3 {
+  font-family: "Playfair Display", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.food-info h3 span {
+  background-color: #1a1814;
+  padding-right: 10px;
+}
+.food-info h3 span:nth-child(2) {
+  padding-left: 10px;
+}
+.food-info h3::after {
+  content: "";
+  position: absolute;
+  border-top: 2px dotted #bab3a6;
+  width: 100%;
+  top: 20px;
+  left: 0;
+  z-index: 1;
+}
+.food-info p {
+  font-size: 14px;
+}
+
+/*******************DOSTAVA*************************/
+.dostava {
+  text-shadow: 0 0 10px #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/dostava.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.dostava-title h1 {
+  text-align: center;
+  font-size: 42px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding-top: 20px;
+}
+.dostava-title p {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.dostava-main h2 {
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.dostava-main h1 {
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+.dostava-main p {
+  font-size: 18px;
+}
+.dostava-main .row {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+.dostava-main .row .col i {
+  font-size: 22px;
+  margin-right: 20px;
+}
+.dostava-main .row .col .number {
+  font-size: 22px;
+}
+.number-title {
+  font-weight: 700;
+}
+/*******************REZERVACIJE*************************/
+.reservation {
+  padding: 60px 0;
+  background-color: #1a1814;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(images/rezervacije.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.reservation .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservation .row .col:first-child {
+  flex-basis: 52%;
+}
+.reservation .row .col:last-child {
+  flex-basis: 46%;
+}
+.rad {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  margin-left: 150px;
+  width: 300px;
+  padding: 3px;
+}
+.radno-vreme {
+  margin-right: 20px;
+}
+.radno-vreme-li {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+}
+.radno-vreme-li:hover .ostali-dani {
+  display: block;
+  transition: 0.3s ease;
+}
+.ostali-dani {
+  display: none;
+}
+.ostali-dani {
+  position: absolute;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+  color: #fff;
+  width: 150px;
+  padding: 10px;
+}
+.ostali-dani ul li {
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.reservation-title {
+  text-align: center;
+}
+.reservation-title h1 {
+  text-align: center;
+  font-size: 42px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  color: #3d3d3d;
+  font-family: "Style Script", cursive;
+}
+.reservation-title p {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+.rad-res {
+  margin-left: 0;
+}
+.reservation-col-title h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.reservation-col-title p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.reservation-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reservation-form form div {
+  display: flex;
+  flex-direction: column;
+}
+.reservation-form form input,
+.reservation-form form select {
+  padding: 8px;
+  margin-right: 15px;
+}
+.reservation-form form label {
+  margin-top: 15px;
+}
+.reservation-form form input {
+  width: 245px;
+}
+.reservation-form form select {
+  width: 72px;
+}
+/*******************GALERIJA*************************/
+.gallery {
+  padding: 60px 0;
+  background-color: #1a1814;
+}
+.gallery-row div {
+  overflow: hidden;
+  box-shadow: 2px 2px 10px #000;
+}
+.gallery-row img {
+  width: 300px;
+  height: 300px;
+  vertical-align: middle;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.gallery-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  justify-content: center;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+.gallery-row img:hover {
+  transform: scale(1.1);
+}
+/*******************RECENZIJE*************************/
+.recension {
+  background: #1a1814;
+  padding: 60px 0;
+  position: relative;
+}
+.recension .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recension .row .col {
+  background: #26231d;
+  flex-basis: 31%;
+  display: flex;
+  padding: 20px;
+}
+.recension .row .col img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.recension .row .col h3 {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.recension .row .col p {
+  font-family: "Playfair Display", sans-serif;
+  margin-bottom: 10px;
+}
+.reservation-star {
+  display: flex;
+}
+
+.reservation-star li {
+  margin-right: 5px;
+}
+.reservation-star li i {
+  color: #cda45e;
+}
+/*******************KONTAKT*************************/
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+}
+.contact .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .row .col {
+  flex-basis: 48%;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid #fff;
+  font-size: 18px;
+  color: #fff;
+  box-shadow: 2px 2px 10px #000;
+}
+.contact-btn {
+  border: 2px solid #cda45e;
+  color: #fff;
+  text-decoration: none;
+  background-color: #cda45e;
+  padding: 8px 25px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  margin-top: 17px;
+}
+.contact-form form {
+  margin-top: 28px;
+}
+
+.contact-form form label {
+  color: #fff;
+}
+.contact-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact .contact-title h1 {
+  color: #fff;
+  font-family: "Style script", cursive;
+  font-size: 42px;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+}
+.contact-map h1 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+.contact .contact-form p {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+}
+.map {
+  margin-top: 68px;
+  width: 90%;
+  height: 81%;
+}
+.fa-angle-left {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  font-size: 50px;
+  font-weight: 400;
+}
+.fa-angle-right {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  font-size: 50px;
+}
+/*****************FOOTER*********************/
+footer {
+  background: #1a1814;
+  color: #fff;
+  padding: 20px 0;
+}
+footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+footer .row .col .footer-adress li p {
+  margin-bottom: 10px;
+}
+footer h3 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.footer-social {
+  margin-left: 30px;
+}
+.footer-social li {
+  display: inline;
+  padding: 30px;
+}
+.footer-social li a {
+  font-size: 40px;
+  color: #cda45e;
+}
+.footer-social li .instagram-li {
+  margin-top: 50px;
+}
+
+.footer-imgs img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+/*****************AFTER FOOTER*************************8*/
+
+.after-footer {
+  background: #000;
+}
+.after-footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.after-footer h5 {
+  font-weight: 400;
+}
+.after-footer h5 span {
+  font-weight: bold;
+  color: #cda45e;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
